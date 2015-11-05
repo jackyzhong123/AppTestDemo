@@ -1,0 +1,404 @@
+﻿
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>主页</title>
+    <link href="http://libs.baidu.com/bootstrap/3.3.4/css/bootstrap.css" rel="stylesheet">
+    <script src="http://libs.baidu.com/jquery/2.1.4/jquery.js"></script>
+    <script src="/js/jsrender.min.js"></script>
+    <script src="/js/site.js"></script>
+    <script src="http://libs.baidu.com/bootstrap/3.3.4/js/bootstrap.js"></script>
+    <style>
+        body {
+            font-family: Helvetica;
+        }
+
+        #headImg {
+            -moz-box-shadow: 2px 2px 10px #fff;
+            -webkit-box-shadow: 0px 0px 10px #fff;
+            box-shadow: 0px 0px 10px #fff;
+        }
+
+        .red {
+            color: red;
+        }
+
+        .appdiv {
+            display: inline-block;
+            width: 50px;
+            text-align: center;
+            margin: 20px 10px;
+        }
+
+            .appdiv img {
+                border: 1px solid #ccc;
+                background-color: white;
+                padding: 2px;
+            }
+
+        .imgUpload {
+            width: 80px;
+            height: 80px;
+            margin-left: 10px;
+            margin-top: 10px;
+            display: inline-block;
+        }
+
+        .thumb {
+            display: inline-block;
+            width: 80px;
+            height: 80px;
+            margin: 5px;
+            background-position: center center;
+            background-size: cover;
+        }
+
+        .app-topbar .app-button[data-back].left {
+            height: auto;
+        }
+
+        .modal-backdrop {
+            background-color: transparent;
+        }
+
+        .modal-content {
+            background-color: rgba(0,0,0,0.6);
+            border-radius: 20px;
+            border: none;
+            box-shadow: 0 0 0;
+        }
+
+        #detailInfo td {
+            padding: 10px;
+        }
+
+        .scrollable {
+            overflow-y: auto;
+            -webkit-overflow-scrolling: touch;
+            position: relative;
+            height: 100%;
+            background: #fff;
+        }
+
+        .headerimg {
+            width: 40px;
+            margin-left: 10px;
+        }
+
+        .thumbQ {
+            display: inline-block;
+            width: 70px;
+            height: 70px;
+            margin: 1px;
+            background-position: center center;
+            background-size: cover;
+        }
+
+        #backgroundImg {
+            display: inline-block;
+            width: 100%;
+            height: 150px;
+            background-position: center center;
+            background-size: cover;
+        }
+
+        .sharePart {
+            float: right;
+            font-size: smaller;
+            color: #93b6f6;
+            margin-right: 4px;
+        }
+
+        .linkThumb {
+            width: 36px;
+            height: 36px;
+            margin: 2px;
+        }
+
+        .linkTitle {
+            display: -webkit-box;
+            -webkit-box-pack: center;
+            -webkit-box-orient: vertical;
+            height: 41px;
+            text-overflow: ellipsis;
+        }
+
+        .linkDiv {
+            background-color: #f3f3f5;
+            margin-right: 5px;
+        }
+
+        .mediacontent {
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        .turngray {
+            filter: grayscale(100%);
+            -webkit-filter: grayscale(100%);
+            -moz-filter: grayscale(100%);
+            -o-filter: grayscale(100%);
+            -webkit-filter: grayscale(1);
+            filter: alpha(opacity=50);
+            -moz-opacity: 0.5;
+            -khtml-opacity: 0.5;
+            opacity: 0.5;
+        }
+
+        .media-heading {
+            font-size: 16px;
+        }
+
+        .hotdot {
+            position: absolute;
+            background-color: #1ab667;
+            right: 0;
+            top: 0;
+            width: 10px;
+            height: 10px;
+            border-width: 1px;
+            border-style: solid;
+            border-radius: 100%;
+            border-color: #ccc;
+        }
+
+
+
+        .media {
+            border-bottom: 1px solid #ccc;
+        }
+
+        body {
+            font-family: 微软雅黑;
+        }
+
+        .media p {
+            color: #aaa;
+        }
+
+
+
+        .badge {
+            color: wheat;
+            background-color: red;
+        }
+
+        .thumbQ {
+            display: inline-block;
+            width: 70px;
+            height: 70px;
+            margin: 1px;
+            background-position: center center;
+            background-size: cover;
+        }
+
+        .dropdown-menu {
+            left: 40%;
+        }
+
+        #dropdownMenu1 {
+            color: white !important;
+        }
+    </style>
+    <script>
+        function newObj() {
+            //location.href = 'ios://' + encodeURIComponent("http://prehdy.chinacloudsites.cn/User/Events/101224")
+        }
+        function view_xylw()
+        {
+            location.href = 'ios://push_bar_' + encodeURIComponent("http://mp.weixin.qq.com/s?__biz=MjM5OTIyMDQ3Mw==&mid=201789806&idx=2&sn=e4ee741c10ca28d7ec9147a68c92a24b&scene=2&from=timeline&isappinstalled=0&key=7c6f9eba607ea3e884a6eabc97f1024a94cb2795d15f5fc1ad7b715cca27ee9e4ae6dd1e308b6ff062299dfc2104017d&ascene=1&uin=MjM4MzEzNTk0MA%3D%3D&devicetype=webwx&version=70000001&pass_ticket=rtb3gIbRlbfXv1wcjjWADFRsOqd6RAlUxMDkfpfFGE53X4FNXvdieRHmVX04XpDX")
+        }
+        function seeMorePeople()
+        {
+            location.href = 'ios://push_bar_' + encodeURIComponent("http://jacky.chinacloudsites.cn/peoplelist.html")
+        }
+
+        function seeAtendance() {
+            location.href = 'ios://push_bar_' + encodeURIComponent("http://prehdy.chinacloudsites.cn/W15")
+        }
+
+    </script>
+</head>
+<body>
+    <nav class="apptopbar" style="background-color:rgba(0,0,0,0.8); position:fixed;z-index:10000;width:100%;">
+        <table style="width:100%;height:44px;table-layout:fixed;">
+            <tr>
+                <td style="text-align:center; width:60px;color:white;" id="goback"></td>
+                <td class="myapptitle" style="text-align:center;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;color:white;">
+                    <span class="btn dropdown-toggle" id="dropdownMenu1"
+                          data-toggle="dropdown">培训圈<i class="glyphicon glyphicon-menu-down"></i></span>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+
+                        <li role="presentation">
+                            <a role="menuitem" tabindex="-1" href="#">创业圈</a>
+                        </li>
+                        <li role="presentation">
+                            <a role="menuitem" tabindex="-1" href="#">培训圈</a>
+                        </li>
+                        <li role="presentation">
+                            <a role="menuitem" tabindex="-1" href="#">
+                                上海约会服务圈
+                            </a>
+                        </li>
+
+                    </ul>
+
+
+                </td>
+                <td id="startAdd" style="text-align:center; width:66px;color:white; "><i class="glyphicon glyphicon-camera" style="font-size:large;"></i></td>
+
+            </tr>
+        </table>
+    </nav>
+
+    <div onclick="newObj()" style="padding-top:50px;">
+
+        <div class="media">
+            <a class="pull-left" href="#">
+                <img class="headerimg media-object needReplace" src="http://myt.edonesoft.com/weblogic/p/chenyixun.jpg"
+                     alt="媒体对象">
+            </a>
+            <div class="media-body">
+                <h4 class="media-heading" style="color:#656895">陈奕迅粉丝团</h4>
+                <div>医生，爱你一生           </div>
+                <div>
+
+                    <div class="thumbQ needReplace viewpics" style="background-image:url(http://tse1.mm.bing.net/th?id=OIP.M5caf3f78ff4bcacc086dc832f4a13086o0&w=135&h=272&c=7&rs=1&qlt=90&o=4&pid=1.9)" alt=" 媒体对象">        </div>
+                    <div class="thumbQ needReplace viewpics" style="background-image:url(http://myt.edonesoft.com/weblogic/p/cyx/2.jpg)" alt=" 媒体对象">        </div>
+                    <div class="thumbQ needReplace viewpics" style="background-image:url(http://myt.edonesoft.com/weblogic/p/cyx/3.jpg)" alt=" 媒体对象">        </div>
+                    <div class="thumbQ needReplace viewpics" style="background-image:url(http://myt.edonesoft.com/weblogic/p/cyx/4.jpg)" alt=" 媒体对象">        </div>
+                    <div class="thumbQ needReplace viewpics" style="background-image:url(http://myt.edonesoft.com/weblogic/p/cyx/5.jpg)" alt=" 媒体对象">        </div>
+                    <div class="thumbQ needReplace viewpics" style="background-image:url(http://myt.edonesoft.com/weblogic/p/cyx/6.jpg)" alt=" 媒体对象">        </div>
+                    <div class="thumbQ needReplace viewpics" style="background-image:url(http://myt.edonesoft.com/weblogic/p/cyx/7.jpg)" alt=" 媒体对象">        </div>
+                    <div class="thumbQ needReplace viewpics" style="background-image:url(http://myt.edonesoft.com/weblogic/p/cyx/8.jpg)" alt=" 媒体对象">        </div>
+                    <div class="thumbQ needReplace viewpics" style="background-image:url(http://myt.edonesoft.com/weblogic/p/cyx/9.jpg)" alt=" 媒体对象">        </div>
+
+
+                </div>
+                <div style="margin-top:4px; margin-bottom:10px; font-size:small; color:#656895"> <i class="glyphicon glyphicon-bullhorn"></i> 陈奕迅Another Eason’s LIFE演唱会－合肥站 </div>
+
+                <div style="margin-bottom:10px">
+                    <div class="row" style="text-align:center">
+                        <div onclick="seeMorePeople()" class="col-xs-4"> <i class="glyphicon   glyphicon-picture"></i> 20 </div>
+                        <div class="col-xs-4"><i class="glyphicon glyphicon-comment"></i> 100  </div>
+                        <div class="col-xs-4"><i class="glyphicon glyphicon-thumbs-up"></i>1万  </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="media">
+            <a class="pull-left" href="#" onclick="return false;">
+                <img class="headerimg media-object needReplace" src="http://myt.edonesoft.com/weblogic/p/huashida.jpg"
+                     alt="媒体对象">
+            </a>
+            <div class="media-body">
+
+                <h4 class="media-heading" style="color:#656895">华东师范大学研究生会    <span onclick="seeAtendance()" style="float:right"><i class="glyphicon glyphicon-user"></i> 100 </span>    </h4>
+
+                <div> “错过一日再等的不是一年，可能会是一生。” </div>
+                <div class="mediacontent">
+                    <div class="media linkDiv" onclick="view_xylw()">
+                        <a class="pull-left" href="#">
+                            <img class="linkThumb media-object needReplace" src="http://myt.edonesoft.com/weblogic/p/yue.jpg"
+                                 alt="媒体对象">
+                        </a>
+                        <div class="media-body">
+                            <div class="linkTitle">【劲爆消息】相约丽娃嘉宾曝光，一眼误终生！</div>
+                        </div>
+                    </div>
+                </div>
+                <div style="margin-top:4px; margin-bottom:4px; font-size:small; color:#656895"> <i class="glyphicon glyphicon-bullhorn"></i>相约丽娃 - 沪上高校大型相亲活动 </div>
+                <div style="margin-bottom:10px">
+                    <div class="row" style="text-align:center">
+                        <div class="col-xs-4"> <i class="glyphicon   glyphicon-picture"></i> 20 </div>
+                        <div class="col-xs-4"><i class="glyphicon glyphicon-comment"></i> 100  </div>
+                        <div class="col-xs-4"><i class="glyphicon glyphicon-thumbs-up"></i>1万  </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="media">
+            <a class="pull-left" href="#" onclick="return false;">
+                <img class="headerimg media-object needReplace" src="http://myt.edonesoft.com/weblogic/p/ted.jpg"
+                     alt="媒体对象">
+            </a>
+            <div class="media-body">
+
+                <h4 class="media-heading" style="color:#656895">TED 中国官方   </h4>
+
+                <div> 可能还有朋友对TED和TEDx不太了解。那么稍微了解下吧！ XD  </div>
+                <div class="mediacontent">
+                    <div class="media linkDiv">
+                        <a class="pull-left" href="#">
+                            <img class="linkThumb media-object needReplace" src="http://myt.edonesoft.com/weblogic/p/feitong.jpg"
+                                 alt="媒体对象">
+                        </a>
+                        <div class="media-body">
+                            <div class="linkTitle">TEDxZhifu “非同凡想”演讲大会</div>
+                        </div>
+                    </div>
+                </div>
+                <div style="margin-top:4px; margin-bottom:4px; font-size:small; color:#656895"> <i class="glyphicon glyphicon-bullhorn"></i> TEDxWeiyu: Explore, Expand, Excel </div>
+                <div style="margin-bottom:10px">
+                    <div class="row" style="text-align:center">
+                        <div class="col-xs-4"> <i class="glyphicon   glyphicon-picture"></i> 20 </div>
+                        <div class="col-xs-4"><i class="glyphicon glyphicon-comment"></i> 100  </div>
+                        <div class="col-xs-4"><i class="glyphicon glyphicon-thumbs-up"></i>1万  </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <br />
+    <br />
+</body>
+</html>
+<script id="testTmpl" type="text/x-jsrender">
+    <li class="media" style="position:relative">
+        {{if show }}
+        <span class="badge" style="position:absolute;left:34px;top:0px; z-index:100000">5</span>
+        {{/if}}
+
+        <a class="pull-left" href="#">
+            <img class="media-object img-round" src="{{:img}}"
+                 alt="通用的占位符图像">
+
+        </a>
+        <div class="media-body">
+            <h4 class="media-heading">{{:title}}</h4>
+            <p>
+                {{:subtitle}}
+            </p>
+        </div>
+    </li>
+</script>
+<script id="testTmpl" type="text/x-jsrender">
+</script>
+<script>
+    var dataSrouce = [
+        { "show": true, "img": "http://img.yiqixxx.com/up/2014/07/14/a2e48518efe70968e561cc163cb3a45a.jpg-preview", "title": "交大红娘", "subtitle": "【交大红娘】单身派对：浪漫太湖，情定西山岛" },
+        { "show": false, "img": "http://img.yiqixxx.com/up/2014/07/30/764aa9dd83f48cf07cc94294c2307f55.jpg-preview", "title": "萤火虫户外旅行协会", "subtitle": "十一前所未有之武功山的秘密（10.1-10.6）" },
+        { "show": true, "img": "http://img.yiqixxx.com/up/2015/04/13/afd689a26909144b3d10c8ed08697a79.jpg-preview", "title": "上海暴走团", "subtitle": "【甘南朝圣】从香巴拉王国到扎尕那秘境的探寻之旅" },
+        { "show": false, "img": "http://img.yiqixxx.com/up/2015/05/12/dfbe17caf0b188a3db115c08de0ded9a.jpg-preview", "title": "OUCSH海大上海校友会", "subtitle": "2015年秋招募志愿者" },
+        { "show": true, "img": "http://img.yiqixxx.com/up/2015/07/13/5.png-preview", "title": "Me Cafe咖啡馆", "subtitle": "9月最浓的爱意，是为家人亲手制作月饼。" },
+        { "show": true, "img": "http://prehdy.chinacloudsites.cn/Upload/Portrait/Person/Thumbs/89c22183-e55c-48d4-abc0-5dfe76428222.jpg", "title": "华东师范大学哲学系", "subtitle": "第36次 - 探索宋明儒学研究的新范式" },
+    ];
+    $(function () {
+     //   var html = $("#testTmpl").render(dataSrouce);
+    //    $("#list").append(html);
+    });
+
+
+</script>
